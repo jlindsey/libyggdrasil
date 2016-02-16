@@ -18,5 +18,5 @@ type YggdrasilAuthenticationResponse struct {
 }
 
 func (resp *YggdrasilAuthenticationResponse) HasMinecraftLicense() bool {
-	return len(resp.AvailableProfiles) == 0
+	return len(resp.AvailableProfiles) > 0
 }
